@@ -3,9 +3,7 @@ layout: page
 title: User Guide
 ---
 
-WhereTourGo (WTG) is a desktop app for managing tour contacts, optimized for use via a Command Line Interface (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, WTG can get your contact management tasks done faster than traditional GUI apps.
-
-The app helps the tour guides easily collate and access contacts of a variety of several services such as F&B, accommodations, attractions etc.
+AddressBook Level 3 (AB3) is a **desktop app for managing contacts, optimized for use via a Command Line Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, AB3 can get your contact management tasks done faster than traditional GUI apps.
 
 * Table of Contents
 {:toc}
@@ -16,7 +14,7 @@ The app helps the tour guides easily collate and access contacts of a variety of
 
 1. Ensure you have Java `11` or above installed in your Computer.
 
-1. Download the latest `wheretourgo.jar` from [here](no link for now).
+1. Download the latest `addressbook.jar` from [here](https://github.com/se-edu/addressbook-level3/releases).
 
 1. Copy the file to the folder you want to use as the _home folder_ for your AddressBook.
 
@@ -91,7 +89,7 @@ Examples:
 
 ### Listing all persons : `list`
 
-Shows a list of all places in the address book.
+Shows a list of all persons in the address book.
 
 Format: `list`
 
@@ -159,7 +157,7 @@ Format: `exit`
 
 ### Saving the data
 
-WhereTourGo data is saved in the hard disk automatically after any command that changes the data. There is no need to save manually. :)
+AddressBook data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
 
 ### Editing the data file
 
@@ -186,12 +184,10 @@ _Details coming soon ..._
 
 Action | Format, Examples
 --------|------------------
-**Add** | `add (Category code)/CONTACT_NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]…​` <br> e.g., `add c/att/Singapore Flyers p/92345678 e/123@example.com a/30 Raffles Ave, Singapore 039803 t/friend t/colleague`
+**Add** | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]…​` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 t/friend t/colleague`
 **Clear** | `clear`
 **Delete** | `delete INDEX`<br> e.g., `delete 3`
 **Edit** | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [t/TAG]…​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`
-**Find** | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find hotel sands`
+**Find** | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`
 **List** | `list`
-**Filter** | `filter c/CATEGORY`<br> e.g.,`filter c/fnb`
 **Help** | `help`
-**Exit** | `exit`
